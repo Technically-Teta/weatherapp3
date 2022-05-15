@@ -4,7 +4,7 @@
 
 ## Quick Guide
 
-First get your api key from [OpenWeatherMap](https://openweathermap.org/)
+First get api key from [OpenWeatherMap](https://openweathermap.org/)
 
 Later, clone this project
 
