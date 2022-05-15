@@ -37,6 +37,7 @@ npm start
 ```
 
 Navigate to `http://localhost:3000/` and enter the city name. You will get the one day weather forecast of the city
+
 ![screenshot](./weather.png)
 
 Note:
