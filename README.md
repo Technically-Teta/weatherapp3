@@ -4,7 +4,7 @@
 
 ## Quick Guide
 
-First get your api key from [OpenWeatherMap](https://openweathermap.org/)
+First get api key from [OpenWeatherMap](https://openweathermap.org/)
 
 Later, clone this project
 
@@ -23,7 +23,7 @@ next move into the server and install dependencies and start the server
 ```bash
 cd server
 npm install
-node index.js
+npm start
 ```
 
 Create a `.env` file and enter your api-key. You can refer `.env-example` file

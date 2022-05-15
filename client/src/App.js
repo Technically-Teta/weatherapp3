@@ -82,7 +82,7 @@ function App() {
             </p>
             <p>
               Humidity:{" "}
-              <span className="data">{result.data.main.humidity} </span>{" "}
+              <span className="data">{result.data.main.humidity}% </span>{" "}
             </p>
             <p>
               Sunrise:
