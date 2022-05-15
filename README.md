@@ -48,4 +48,4 @@ If you would like to run the backend Express server and the react server at the 
 npm run dev
 ```
 
-Note: Server runs on http://localhost:5000 and client on http://localhost:3000
+Server runs on http://localhost:5000 and client on http://localhost:3000
