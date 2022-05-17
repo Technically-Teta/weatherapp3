@@ -41,11 +41,4 @@ Navigate to `http://localhost:3000/` and enter the city name. You will get the o
 ![screenshot](./weather.png)
 
 Note:
-If you would like to run the backend Express server and the react server at the same time use the following command in server side terminal:
-
-```bash
-# Run the client & server with concurrently
-npm run dev
-```
-
 Server runs on http://localhost:5000 and client on http://localhost:3000

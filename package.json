@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.mjs",
     "client": "cd client && npm start",
-    "dev": "concurrently -n 'server, client' -c 'cyan, green' \"nodemon server/index.js\" \"npm run client\""
+    "dev": "concurrently -n 'server, client' -c 'cyan, green' \"nodemon server/index.mjs\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
