@@ -42,3 +42,8 @@ Navigate to `http://localhost:3000/` and enter the city name. You will get the o
 
 Note:
 Server runs on http://localhost:5000 and client on http://localhost:3000
+
+### Resource
+- [How to easily manipulate URL search parameters in JavaScript
+](https://felixgerschau.com/js-manipulate-url-search-params/)
+
