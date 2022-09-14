@@ -11,7 +11,7 @@ console.log(`Your api key is ${process.env.API_KEY}`);
 const app = express();
 
 //Set the port that you want the server to run on
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 app.get("/weather", (req, res) => {
   const city = req.query.cityName;
@@ -27,7 +27,7 @@ app.get("/weather", (req, res) => {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data)
+      console.log(data);
       res.send({ data });
     })
     .catch((err) => {

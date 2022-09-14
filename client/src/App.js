@@ -1,37 +1,26 @@
 import { useState } from "react";
 import "./App.css";
-import SearchForm from "./components/SearchForm"
-import ResultPage from "./components/ResultPage"
+import SearchForm from "./components/SearchForm";
+import ResultPage from "./components/ResultPage";
+import useWeather from "./components/useWeather";
 
 function App() {
-  const [result, setResult] = useState(null);
-  const [city, setCity] = useState("");
+  // only we want when the user submit the form
+  const [city, setCity] = useState(null);
 
-  const handleSubmit = (ev) => {
-    ev.preventDefault();
-    const params = new URLSearchParams({ cityName: city });
- 
+  const data = useWeather({ city });
 
-    fetch(`/weather?${params}`)
-      .then((res) => res.json())
-      .then((data) => setResult(data));
-
-    setCity("");
+  const onSubmit = ({ city }) => {
+    setCity(city);
   };
-
-  const onChange = 
-    (ev) => setCity(ev.target.value)
-  
 
   return (
     <div className="App">
       <div className="weather">
         <h1 className="App-header">Weather forecast</h1>
-        <SearchForm handleSubmit= {handleSubmit} onChange = {onChange} city = {city}/>
-       
+        <SearchForm onSubmit={onSubmit} />
       </div>
-      <ResultPage result = {result} city = {city}/>
-  
+      <ResultPage result={data} city={city} />
     </div>
   );
 }
