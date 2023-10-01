@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
     res.json({ message: 'Hello from my backend. This is my weather app part 2 '});
   });
 
-// creates an endpoint for the route /api/weather
-app.get('/api/weather', (req, res) => {
+// creates an endpoint for the route /api/cities
+app.get('/api/cities', (req, res) => {
   res.json(dataWeather);
 });
 
